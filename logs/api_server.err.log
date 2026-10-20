@@ -1,0 +1,7 @@
+INFO:     Started server process [23264]
+INFO:     Waiting for application startup.
+C:\Applications\interview -prep\Kafka-demo\taxi-forecasting-capstone\.venv\Lib\site-packages\mlflow\store\artifact\utils\models.py:32: FutureWarning: ``mlflow.tracking.client.MlflowClient.get_latest_versions`` is deprecated since 2.9.0. Model registry stages will be removed in a future major release. To learn more about the deprecation of model registry stages, see our migration guide here: https://mlflow.org/docs/latest/model-registry.html#migrating-from-stages
+  latest = client.get_latest_versions(name, None if stage is None else [stage])
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+{"event": "prediction", "timestamp": "2026-10-20T12:36:05.995716+00:00", "request_id": "cdfe0541-bed1-4a5c-8030-b2dda9d1189f", "problem": "fare", "model_version": "latest", "features": {"trip_distance": 17.0, "passenger_count": 1, "pu_location_id": 132, "do_location_id": 230, "trip_duration_min": null}, "prediction": 70.8}
